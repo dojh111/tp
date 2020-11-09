@@ -33,8 +33,9 @@ Section **2.0 Quick Start**, **5.0 FAQ** and the **6.0 Command Summary**, which 
 #### Contributions to the DG
 Similar to the UG, I contributed UML diagrams and content related to storage and archiving, which falls under section 
 [4.8 Storing and Archiving Notes](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#48-storing-and-archiving-notes-danzel), 
-and the architecture diagram in [3.1 Architecture](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#31-architecture). Finally, I also contributed to 
-[Appendix A: Guidelines on Manual Testing](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#appendix-a-guidelines-on-manual-testing). 
+and the architecture diagram in [3.1 Architecture](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#31-architecture). 
+
+Finally, I also contributed to [Appendix A: Guidelines on Manual Testing](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#appendix-a-guidelines-on-manual-testing). 
 The developer guide can be found [here](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide).
 
 #### Contributions to Team-Based Tasks
