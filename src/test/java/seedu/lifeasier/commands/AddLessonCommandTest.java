@@ -11,8 +11,6 @@ import seedu.lifeasier.parser.Parser;
 import seedu.lifeasier.storage.FileStorage;
 import seedu.lifeasier.ui.Ui;
 
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -20,8 +18,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AddLessonCommandTest {
     public static final String TEST_FILEPATH = "testSave.txt";
 
-    private final LocalDateTime sampleTime1 = LocalDateTime.parse("2020-11-11T11:11");
-    private final LocalDateTime sampleTime2 = LocalDateTime.parse("2020-12-12T12:12");
+    private final LocalDateTime sampleTime1 = LocalDateTime.parse("2021-11-11T11:11");
+    private final LocalDateTime sampleTime2 = LocalDateTime.parse("2021-12-12T12:12");
     private final LocalDateTime pastSampleTime1 = LocalDateTime.parse("2019-11-11T11:11");
     private final LocalDateTime pastSampleTime2 = LocalDateTime.parse("2019-12-12T12:12");
 

@@ -30,8 +30,8 @@ class DeleteTaskCommandTest {
 
     public static final String TEST_FILEPATH = "testSave.txt";
 
-    private final LocalDateTime sampleTime1 = LocalDateTime.parse("2020-11-11T11:11");
-    private final LocalDateTime sampleTime2 = LocalDateTime.parse("2020-12-12T12:12");
+    private final LocalDateTime sampleTime1 = LocalDateTime.parse("2021-11-11T11:11");
+    private final LocalDateTime sampleTime2 = LocalDateTime.parse("2021-12-12T12:12");
 
     public void setUpStreams(String input) {
         System.setOut(new PrintStream(outContent));

@@ -30,10 +30,10 @@ class EditLessonCommandTest {
 
     public static final String TEST_FILEPATH = "testSave.txt";
 
-    private final LocalDateTime sampleTime1 = LocalDateTime.parse("2020-11-11T11:11");
-    private final LocalDateTime sampleTime2 = LocalDateTime.parse("2020-12-12T12:12");
-    private final LocalDateTime sampleTime3 = LocalDateTime.parse("2020-12-12T12:13");
-    private final LocalDateTime sampleTime4 = LocalDateTime.parse("2020-12-12T12:14");
+    private final LocalDateTime sampleTime1 = LocalDateTime.parse("2021-11-11T11:11");
+    private final LocalDateTime sampleTime2 = LocalDateTime.parse("2021-12-12T12:12");
+    private final LocalDateTime sampleTime3 = LocalDateTime.parse("2021-12-12T12:13");
+    private final LocalDateTime sampleTime4 = LocalDateTime.parse("2021-12-12T12:14");
 
     public void setUpStreams(String input) {
         System.setOut(new PrintStream(outContent));
@@ -72,7 +72,7 @@ class EditLessonCommandTest {
 
     @Test
     void execute_validLessonAndEditingTime_lessonNameEdited() throws TaskPastException, TaskDuplicateException {
-        setUpStreams("1\n" + "2\n" + "/date 12-12-20 /from 12:12 /to 12:14");
+        setUpStreams("1\n" + "2\n" + "/date 12-12-21 /from 12:12 /to 12:14");
 
         Ui ui = new Ui();
         NoteList notes = new NoteList();
