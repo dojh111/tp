@@ -7,4 +7,4 @@ LifEasier helps Computer Engineering (CEG) students to manage their classes, soc
 ## Useful links:
 * [User Guide](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide)
 * [Developer Guide](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide)
-* [About Us](AboutUs.md)
+* [About Us](https://ay2021s1-cs2113t-w13-4.github.io/tp/AboutUs)

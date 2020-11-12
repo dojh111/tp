@@ -14,18 +14,18 @@
         * [3.2.5 Model Component](#325-model-component)
         * [3.2.6 Storage Component](#326-storage-component)
 * [4.0 Implementation](#40-implementation)
-    * [4.1 Adding Lessons, Events, Deadlines (Fairuz)](#41-adding-lessons-events-deadlines-fairuz)
-    * [4.2 Editing Lessons, Events, Deadlines (Fairuz)](#42-editing-lessons-events-deadlines-fairuz)
-    * [4.3 Deleting Lessons, Events, Deadlines (Fairuz)](#43-deleting-of-lessons-events-deadlines-fairuz)
-    * [4.4 Adding Notes (Edmund)](#44-adding-notes-edmund)
-    * [4.5 Editing and Deleting Notes (Edmund)](#45-editing-and-deleting-notes-edmund)
-    * [4.6 Showing Notes (Edmund)](#46-showing-notes-edmund)
-    * [4.7 Undoing Changes Made to Tasks and Notes (Johannine)](#47-undoing-changes-made-to-tasks-and-notes-johannine)
-    * [4.8 Storing and Archiving Notes (Danzel)](#48-storing-and-archiving-notes-danzel)
-    * [4.9 Displaying Schedule (Johannine)](#49-displaying-schedule-johannine)
-    * [4.10 Displaying Free Time and Sleep Time (Daniel)](#410-displaying-free-time-and-sleep-time-daniel)
-    * [4.11 Parsing Commands (Edmund)](#411-parsing-commands-edmund)
-    * [4.12 Recurring Tasks and Auto Deletion (Daniel)](#412-recurring-tasks-and-auto-deletion-daniel)
+    * [4.1 Adding Lessons, Events, Deadlines](#41-adding-lessons-events-deadlines)
+    * [4.2 Editing Lessons, Events, Deadlines](#42-editing-lessons-events-deadlines)
+    * [4.3 Deleting Lessons, Events, Deadlines](#43-deleting-of-lessons-events-deadlines)
+    * [4.4 Adding Notes ](#44-adding-notes)
+    * [4.5 Editing and Deleting Notes](#45-editing-and-deleting-notes)
+    * [4.6 Showing Notes](#46-showing-notes)
+    * [4.7 Undoing Changes Made to Tasks and Notes](#47-undoing-changes-made-to-tasks-and-notes)
+    * [4.8 Storing and Archiving Notes](#48-storing-and-archiving-notes)
+    * [4.9 Displaying Schedule](#49-displaying-schedule)
+    * [4.10 Displaying Free Time and Sleep Time](#410-displaying-free-time-and-sleep-time)
+    * [4.11 Parsing Commands](#411-parsing-commands)
+    * [4.12 Recurring Tasks and Auto Deletion](#412-recurring-tasks-and-auto-deletion)
 * [5.0 Product Scope](#50-product-scope)
     * [5.1 Target User Profile](#51-target-user-profile)
     * [5.2 Value Proposition](#52-value-proposition)
@@ -69,6 +69,8 @@ Click `New...` and find the directory of the JDK.
 
 1. Click `OK` to accept the default settings.
 
+<div style="page-break-after: always;"></div>
+
 ### 2.3 Verifying Setup
 
 1. Run `seedu.LifEasier.Main` and try a few commands. If you want to do further manual testing, please refer to [this section](#appendix-a-guidelines-on-manual-testing).
@@ -88,6 +90,8 @@ This section elaborates on the high-level architecture of the **LifEasier** appl
 
 _Figure 3.1-1 Architecture diagram for LifEasier_
 
+<div style="page-break-after: always;"></div>
+
 **LifEasier** is comprised of 7 components, which are listed below together with their functions:
 
 1. `LifEasier`: The main class of the application.
@@ -99,16 +103,17 @@ _Figure 3.1-1 Architecture diagram for LifEasier_
 
 Each of these components are expanded on in more detail in their respective sections.
 
-Figure 3.1-2 illustrates the Sequence diagram for how each class interacts with one another through an example  “addDeadline” command.
+Figure 3.1-2 illustrates the Sequence diagram for how each class interacts with one another through an example  `addDeadline` command.
 
 ![Figure 3.1-2](images/DeveloperGuide/Figure 3.1-2.png)  
 
 _Figure 3.1-2. Sequence diagram of “addDeadline”._
 
+<div style="page-break-after: always;"></div>
+
 ### 3.2 Components
 
 This section expands on the various components that were first seen in the [Architecture section](#31-architecture).
-
 
 #### 3.2.1 LifEasier Component
 
@@ -131,6 +136,7 @@ The `Parser` component takes the user’s inputs from the `Ui` component, and ma
  the parameters required to execute. Once this condition is fulfilled, it returns a `Command` object to **LifEasier**
   for the commands to be executed.
   
+<div style="page-break-after: always;"></div>
   
 #### 3.2.4 Command Component
 
@@ -142,6 +148,8 @@ The `Command` component consists of an abstract `Command` class and the many dif
  ![Figure 3.2.4-1](images/DeveloperGuide/Figure%203.2.4-1.png)  
  
  _Figure 3.2.4-1: The classes that inherit from the Command class_
+ 
+<div style="page-break-after: always;"></div> 
  
 #### 3.2.5 Model Component
 
@@ -160,7 +168,7 @@ The `Storage` component handles saving of the users’ notes and tasks to persis
 
 The following section will go into further details on how the different features of **LifEasier** are implemented.
 
-### 4.1 Adding Lessons, Events, Deadlines (Fairuz)
+### 4.1 Adding Lessons, Events, Deadlines
 
 The `addLesson`, `addEvent` and `addDeadline` commands adds the specific task into the `TaskList`.
 
@@ -186,7 +194,7 @@ When the command is called, the class invokes the `TaskList` class method to add
 The success and accuracy of the command is heavily dependent on the values passed to the command by the `Parser` class.
  Thus, checks have to be thoroughly conducted by the `Parser` class before the `Command` class is invoked.
 
-### 4.2 Editing Lessons, Events, Deadlines (Fairuz)
+### 4.2 Editing Lessons, Events, Deadlines
 
 The `editEventCommand`, `editDeadlineCommand` and `editLessonCommand` allows the user to edit existing
  tasks in the `TaskList` according to the type of task.
@@ -220,8 +228,8 @@ For more information on the reference frames for the getting and pushing of copy
 Due to the difference in the types of tasks and their parameters, this functionality was designed to guide the user
  explicitly to ensure accurate inputs and thus efficiency. This will have minimal impact on the efficiency of the program,
  while improving the quality of use for the user.
- 
-### 4.3 Deleting of Lessons, Events, Deadlines (Fairuz)
+  
+### 4.3 Deleting of Lessons, Events, Deadlines
 
 The `deleteTaskCommand` allows the user to delete any `Task` (lesson, event or deadline) from the `TaskList`.
 
@@ -248,7 +256,9 @@ The command has to handle separate types of tasks as printing all tasks and forc
  would be impractical in the long run. The enhanced capability with `TaskHistory` to allow the user to undo any action is 
  crucial as its initial functionality did not have the ability to restore any accidentally deleted `Tasks`.
 
-### 4.4 Adding Notes (Edmund)
+<div style="page-break-after: always;"></div>
+
+### 4.4 Adding Notes
 
 The `addNotes` command adds user’s notes to the NoteList with a specified title and description. 
 
@@ -271,6 +281,7 @@ Figure 4.4-1 below illustrates the flow of `addNotes` through a sequence diagram
 
 _Figure 4.4-1: Sequence diagram for addNotesCommand_
 
+<div style="page-break-after: always;"></div>
 
 #### Design Considerations
 
@@ -278,7 +289,7 @@ An empty string is defined clearly as a long string of spaces/no string and must
 by the user, as it affects the usability and searchability of the `NoteList`. As such, the above checks are implemented to prevent any hiccups by the user.
 
 
-### 4.5 Editing and Deleting Notes (Edmund)
+### 4.5 Editing and Deleting Notes
 
 The `editNotes` command allows the user to change the title or description of their notes stored in the `NoteList`.
 The `deleteNotes` command allows the user to remove the specified notes completely from the `NoteList`.
@@ -305,9 +316,13 @@ while `D` would mean editing the description.
 
 Figure 4.5-1 illustrates the above steps via a sequence diagram.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.5-1](images/DeveloperGuide/Figure 4.5-1.png)
 
 _Figure 4.5-1: Sequence diagram for editNotesCommand_
+
+<div style="page-break-after: always;"></div>
 
 ##### deleteNotes
 
@@ -328,6 +343,8 @@ the command while a `Y` would proceed to remove the note from the list.
 
 Figure 4.5-2 illustrates the above steps via a Sequence Diagram.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.5-2](images/DeveloperGuide/Figure 4.5-2.png)
 
 _Figure 4.5-2: Sequence diagram for deleteNotesCommand_
@@ -341,7 +358,9 @@ in any of the notes nor can he input an invalid title such as an empty string.
 * In the event of an empty list, the user cannot delete any more notes from the list. Hence this would result in 
 an exception caught.
 
-### 4.6 Showing Notes (Edmund)
+<div style="page-break-after: always;"></div>
+
+### 4.6 Showing Notes
 
 The `showNotes` command allows the user to select a note to view.
 
@@ -356,9 +375,13 @@ then it would return that the title cannot be found.
 
 Figure 4.6-1 illustrates the above steps via a Sequence Diagram.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.6-1](images/DeveloperGuide/Figure 4.6-1.png)
 
 _Figure 4.6-1: Sequence diagram for showNotesCommand_
+
+<div style="page-break-after: always;"></div>
 
 #### Design Considerations
 
@@ -369,7 +392,7 @@ in any of the notes, a `TitleNotFoundException` will be caught.
 * The user would be continuously prompted for a valid input if he enters an empty string when prompted for an input.
 * If multiple notes contains the title, then the user would be asked to input the corresponding number to the note he wishes to view.
 
-### 4.7 Undoing Changes Made to Tasks and Notes (Johannine)
+### 4.7 Undoing Changes Made to Tasks and Notes
 
 The undo feature allows the user to undo any changes made to `Task` or `Note` objects, particularly edits and deletions.
 
@@ -390,6 +413,8 @@ which holds all the previous copies of the object.
 Figure 4.7-1 illustrates the sequence diagram of the concept above, applied on changes made to a `Task`. The concept 
 works in a similar manner for `Note` objects.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.7-1](images/DeveloperGuide/Figure 4.7-1.png)
 
 _Figure 4.7-1: Sequence Diagram for creating and pushing old copies of Tasks_ 
@@ -401,12 +426,16 @@ old copy, and then the old copy is removed from the `Tasklist`.
 
 The corresponding confirmation message to be displayed is determined by whether the `editNumber` is positive or negative.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.7-2](images/DeveloperGuide/Figure 4.7-2.png)
 
 _Figure 4.7-2: Sequence Diagram for undoing edits or deletions of Tasks_
 
 A new `taskHistory` or `noteHistory` is created at every startup of the application. Therefore, the history of any 
 edits and deletions are only available for the current session. Once the program is closed, all information is discarded.
+
+<div style="page-break-after: always;"></div>
 
 #### Design Considerations
 
@@ -422,7 +451,7 @@ previous (positive) `editID`. Therefore, if an object is deleted, all other prev
 or `noteHistory` are discarded. For example, if a particular object goes through _edit1 -> edit2 -> delete1 -> edit3_, the 
 user will only be able to undo _edit3_ and _delete1_. The copies related to _edit1_ and _edit2_ are removed from history.
 
-### 4.8 Storing and Archiving Notes (Danzel)
+### 4.8 Storing and Archiving Notes
 
 The storing and saving of data in the **LifEasier** app is done automatically after every change such as adding, editing, 
 deleting a component such as a lesson, deadline, event or note. The following section documents how the data storing 
@@ -433,6 +462,8 @@ and archiving system of **LifEasier** was implemented, followed by the considera
 Figure 4.8-1 shows the simplified class diagram of all the components in the storage package. There are far more methods 
 that exist then as shown in the class diagram. These have been omitted for simplicity.
 
+<div style="page-break-after: always;"></div>
+
 ![Class Diagram Image](images/DeveloperGuide/StorageClassDiagram.png)
 
 _Figure 4.8-1: Class Diagram for all storage components_
@@ -442,11 +473,23 @@ the main `LifEasier` class creates a new `FileStorage` object, which starts the 
 data of the user, if available. Else, new save directories and save files are created in the same directory which the `LifEasier.jar` was run. 
 Tasks and notes data read from the save file are used to create new `Task` and `Note` objects respectively, and added into `TaskList` and `NoteList`.
 
+<div style="page-break-after: always;"></div>
+
 During the creation of the new `Task` and `Note` objects, checks are also done on the validity of the module code, logical flow of time _(Start time cannot be after end time)_,
 and whether the dates of both times are the same, through the `checkForValidSaveInformation()` method found in `TaskStorage`. With the exception of module code, whenever data read 
 has been deemed as corrupted, an appropriate error will be thrown, and the task will **not** be added to the program.
 
 The save file will be updated at the end of file reading.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ![Startup file load sequence diagram](images/DeveloperGuide/Figure 4.8-2.png)
 
@@ -464,6 +507,8 @@ public static void main(String[] args) {
 ````
 _Figure 4.8-3: Code snippet for where save file names are set_
 
+<div style="page-break-after: always;"></div>
+
 Whenever a new task or note is added, edited or deleted, the `saveTask()` or `saveNote()` methods in the `FileStorage` class is called depending 
 on whether the changed item was a task or a note, to begin the data saving process. Figure 4.8-4 shows the sequence diagram taken by the program 
 to save the user’s notes data. The saving process for tasks and notes are implemented in similar ways, with the saving process for tasks 
@@ -474,6 +519,8 @@ readable save files. The format in which the `LocalDateTime` objects are convert
 ![Save sequence diagram](images/DeveloperGuide/StorageSaveSequenceDiagram.png)
 
 _Figure 4.8-4: Sequence diagram for saving of user note data_
+
+<div style="page-break-after: always;"></div>
 
 #### Implementation - Note Archiving
 
@@ -506,6 +553,8 @@ _Figure 4.8-5: Code snippet for main driver of archive command_
 The `archive` command checks for the size of the current `noteList` before execution, and as such, when an empty `noteList` is detected, 
 the archiving process will not be started. Archived notes will **not** be read by the program anymore and any changes can be made to the created archive save file.
 
+<div style="page-break-after: always;"></div>
+
 #### Design Considerations
 
 * In order to ensure users get the best hassle free and user-friendly experience while using **LifEasier**, saves are automatically done after any change 
@@ -518,15 +567,19 @@ the save files directly and easily, if required.
 reading in this data by throwing exceptions to stop prevent the current data from being read. Any data read up to that point is **untouched**, corrupted data discarded, and the app will 
 continue to read in the remaining data and run as per normal. **Manual intervention from the user** is required to remove improperly formatted and/or missing data.  
 
-### 4.9 Displaying Schedule (Johannine)
+### 4.9 Displaying Schedule
 
 The `displaySchedule` command presents the `TaskList` contents in a timetable format, given that it is specified to 
 display the full week. Otherwise, it simply displays the day’s schedule for today or tomorrow in a list form in 1 hour intervals, 
 with the `Task` items sorted by (starting) time. Figure 4.9-1 below provides the sequence diagram for the logic.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.9-1](images/DeveloperGuide/Figure 4.9-1.png)
 
 _Figure 4.9-1: Sequence diagram for displaying week or day schedule_
+
+<div style="page-break-after: always;"></div>
 
 #### Implementation
 
@@ -553,7 +606,7 @@ entire `TaskList` every time it is called, in order to arrange the `Tasks` accor
 timings of `Tasks` were rounded to the hour. This was an intentional design choice to keep the timetable neat and not 
 overloaded with too many details.
 
-### 4.10 Displaying Free Time and Sleep Time (Daniel)
+### 4.10 Displaying Free Time and Sleep Time
 
 #### Implementation
 
@@ -565,10 +618,13 @@ The `freeTime` command displays to the user their longest block of free time for
  three values to the `Ui` to display to the user. Figure 4.10-1 shows the sequence diagram for the `freeTimeCommand`,
  and Figure 4.10-2 shows the sequence diagram for the `sleepTimeCommand`.
 
+<div style="page-break-after: always;"></div>
+
 ![Figure 4.10-1](images/DeveloperGuide/Figure%204.10-1.png)  
 
 _Figure 4.10-1: Sequence diagram for freeTimeCommand execution_
 
+<div style="page-break-after: always;"></div>
 
 ![Figure 4.10-2](images/DeveloperGuide/Figure%204.10-2.png)  
 
@@ -584,8 +640,9 @@ _Figure 4.10-2: Sequence diagram for sleepTimeCommand execution_
 * The functions also only provide an accuracy resolution which is rounded to the hour. Similar to the `displaySchedule`
  command, this was an intentional design choice to not overload the user with too many unnecessary details. 
 
+<div style="page-break-after: always;"></div>
 
-### 4.11 Parsing Commands (Edmund)
+### 4.11 Parsing Commands
 
 The `Parser` determines what command is to be executed given by the user input. If the user input does not match any of 
 the specified commands, an unknown command message would be returned.
@@ -604,7 +661,7 @@ With the required parameters filled, the parser would then initialise the respec
 The user cannot input an empty string as a parameter. This would avoid issues of invalid parameters passing on to the 
 commands, which can result in errors in the program. As such, checks are done on the user input.  
 
-### 4.12 Recurring Tasks and Auto Deletion (Daniel)
+### 4.12 Recurring Tasks and Auto Deletion
 
 #### Implementation
 
@@ -621,6 +678,8 @@ decremented by 1 until the date of `start` is on or after the current date, or `
 **LifEasier** only updates tasks on startup, and when new tasks are added. This was done intentionally to ensure
 that each command does not take too much time to run. However, if a user keeps **LifEasier** open over the course of a
 few days without adding any new tasks to their schedule, they might need to restart it to ensure that their tasks are updated.
+
+<div style="page-break-after: always;"></div>
 
 ## 5.0 Product Scope
 
@@ -642,6 +701,8 @@ It is designed to help students keep track of everything that they need to do. T
  
 This will make their lives easier as they can more accurately keep track of what they are supposed to do, and what they 
 have already completed.
+
+<div style="page-break-after: always;"></div>
 
 ## 6.0 User Stories
 
@@ -681,6 +742,7 @@ However, the versions available in the `/docs` folder should be the most updated
 
 The project uses GitHub Pages and Jekyll to generate formatted static websites to host the User Guide and Developer Guide.
 
+<div style="page-break-after: always;"></div>
 
 ## 9.0 Testing / Logging
 
@@ -720,6 +782,8 @@ The following section will give the definition of some commonly used words in **
 * _noteList_ - An array list of `Note` objects used by **LifEasier** to temporarily store current notes while the program is running.
 * _Task_ - Refers to Lessons, Events and Deadlines
 
+<div style="page-break-after: always;"></div>
+
 ## Appendix A: Guidelines on Manual Testing
 
 Refer to the **LifEasier** User Guide [here](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide), for the setting up/quick start guide and to view more detailed information of all usable commands. 
@@ -758,9 +822,7 @@ At any point, feel free to try out the undo command after an edit or delete has 
 * `undo task`
 * `undo note`
 
-Once again, use the `display` and `showNotes` commands to view the updated tasks and notes contents.
-
-At any point, feel free to quit the app using `exit` and relaunch the app to view that **LifEasier** has saved all input data.
+Once again, use the `display` and `showNotes` commands to view the updated tasks and notes contents. At any point, feel free to quit the app using `exit` and relaunch the app to view that **LifEasier** has saved all input data.
 
 Test deletion of tasks and notes with the following commands.
 * `deleteTask /type lesson /CS2113T`
@@ -779,7 +841,6 @@ To show free time and sleep time, use the following commands.
 
 Following the above path for manual testing will bring you through all the features implemented in the current version 
 of **LifEasier**. Please feel free to try out other combinations of inputs to fully test the program.
-
 
 ## Appendix B: Effort
 

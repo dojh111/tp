@@ -25,6 +25,8 @@ For enhancements, I implemented the following functionalities:
 * The UI for timetable display
 * Undo command, coordinated with another team member to discuss implementation and algorithm to use
 
+<div style="page-break-after: always;"></div>
+
 ### Contributions to the User Guide
 
 In the User Guide, I wrote the sections related to the features and enhancements I implemented.
@@ -35,8 +37,8 @@ and [Section 3.10](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#310-dis
 
 In the Developer Guide, I also wrote the sections related to the features and enhancements I implemented, as well as the
 corresponding UML diagrams of these sections.
-These can be found in [Section 4.6](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#46-undoing-changes-made-to-tasks-and-notes-johannine) 
-and [Section 4.8](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#48-displaying-schedule-johannine).
+These can be found in [Section 4.7](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#47-undoing-changes-made-to-tasks-and-notes) 
+and [Section 4.9](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#49-displaying-schedule).
 
 ### Contributions to Team-Based Tasks
 
@@ -48,7 +50,7 @@ For example, I helped in writing the Project Scope section as well as the Append
 Throughout the development process, I helped review some pull requests of the other members, as well as communicating 
 with them any suggestions as to how might improve their development of features.
 
-#### Contributions beyond the Project Team
+### Contributions beyond the Project Team
 
 I participated actively during peer review exercises and did my best to give constructive and meaningful feedback to 
 the other teams.

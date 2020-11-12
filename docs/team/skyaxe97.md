@@ -34,23 +34,23 @@ I also implemented the functionality that allows the program to prompt the User 
 ### Contributions to the User Guide
 
 In the User Guide, I contributed mainly to the features that I implemented as above.
-Namely, these are 
-[Section 3.2](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#32-adding-a-lesson-addlesson), 
-[Section 3.3](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#33-adding-an-event-addevent), 
-[Section 3.4](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#34-adding-a-deadline-adddeadline),
-[Section 3.5](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#35-editing-a-lesson-editlesson),
-[Section 3.6](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#36-editing-an-event-editevent),
-[Section 3.7](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#37-editing-a-deadline-editdeadline) and
+Namely, these are:<br>
+<br>
+[Section 3.2](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#32-adding-a-lesson-addlesson)<br>
+[Section 3.3](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#33-adding-an-event-addevent)<br>
+[Section 3.4](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#34-adding-a-deadline-adddeadline)<br> 
+[Section 3.5](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#35-editing-a-lesson-editlesson)<br>
+[Section 3.6](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#36-editing-an-event-editevent)<br>
+[Section 3.7](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#37-editing-a-deadline-editdeadline)<br> 
 [Section 3.8](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#38-deleting-a-task-deletetask).
-
 
 ### Contributions to the Developer Guide
 
 In the Developer Guide, I also wrote the sections related to the features and enhancements I implemented. The UML diagrams in these sections were also contributed by me.
 These can be found in 
-[Section 4.1](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#41-adding-lessons-events-deadlines-fairuz), 
-[Section 4.2](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#42-editing-lessons-events-deadlines-fairuz) and 
-[Section 4.3](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#43-deleting-of-lessons-events-deadlines-fairuz). 
+[Section 4.1](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#41-adding-lessons-events-deadlines), 
+[Section 4.2](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#42-editing-lessons-events-deadlines) and 
+[Section 4.3](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#43-deleting-of-lessons-events-deadlines). 
 
 ### Contributions to Team-Based Tasks
 

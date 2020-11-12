@@ -22,9 +22,6 @@ I contributed the following functionalities to the project:
 1. The sleepTime command. This command allows users to find out how much time they have to sleep based on their schedules.
 1. The freeTime command. This command allows users to find out how much free time they have in their day based on their schedules.
 1. Recurring tasks and auto deletion of expired tasks. I implemented the functionality to allow users to add recurring tasks. I also implemented the functionality to update tasks based on their remaining recurrences, and to also delete tasks that are expired in the past.
-
-<div style="page-break-after: always;"></div>
-
 1. Handling of duplicate tasks. I implemented the functionality to stop users from adding duplicate tasks or very similar tasks into their schedule.
 1. Overhauling of User Interface. I overhauled the user interface of the project for v2.1 of the project. This was after user feedback that it was quite difficult to differentiate inputs and different types of outputs. Behind the scenes, this also involved ensuring that all printing was only done in the `Ui` class, and not scattered in the other classes.
 1. Initial parsing functionality. I worked on the initial parsing of commands for v1.0 of the project. However, this was later overhauled by other group members to greatly improve the user-friendliness of the project.
@@ -33,13 +30,13 @@ I contributed the following functionalities to the project:
 
 In the User Guide, I wrote the sections related to the features and enhancements I implemented.
 Namely, these are [Section 3.11](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#311-viewing-available-free-time-freetime),
-[Section 3.12](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#312-viewing-available-sleep-time-sleeptime)
+[Section 3.12](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#312-viewing-available-sleep-time-sleeptime),
  and [Section 4.2](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#42-recurring-tasks-and-auto-deletion).
 I also contributed to the formatting and ensuring consistency across the User Guide, and added some graphics.
 ### Contributions to the Developer Guide
 
 In the Developer Guide, I also wrote the sections related to the features and enhancements I implemented. The UML diagrams in these sections were also contributed by me.
-These can be found in [Section 4.9](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#410-displaying-free-time-and-sleep-time-daniel) and [Section 4.11](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#412-recurring-tasks-and-auto-deletion-daniel).
+These can be found in [Section 4.9](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#410-displaying-free-time-and-sleep-time) and [Section 4.11](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#412-recurring-tasks-and-auto-deletion).
 I also contributed [Section 3.2](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#32-components).
 I also contributed much of some of the non-specific sections, such as Sections [8.0](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#80-documentation), [9.0](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#90-testing--logging), [10.0](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#100-dev-ops) and [Appendix B](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#appendix-b-effort).
 

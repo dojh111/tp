@@ -31,14 +31,16 @@ I have written sections that were relevant to what enhancements I have implement
 [Section 3.15](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#315-deleting-a-note-deletenotes),
 [Section 3.16](https://ay2021s1-cs2113t-w13-4.github.io/tp/UserGuide#316-editing-a-note-editnotes).
 
+<div style="page-break-after: always;"></div>
+
 ### Contributions to the Developer Guide
 
 I have written sections that were relevant to what enhancements I have implemented in the project, including related UML diagrams.
 These includes the Sequence diagram found in [Section 3.1](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#31-architecture),
-contents in [Section 4.4](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#44-adding-notes-edmund), 
-[Section 4.5](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#45-editing-and-deleting-notes-edmund),
-[Section 4.6](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#46-showing-notes-edmund),
-[Section 4.11](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#411-parsing-commands-edmund).
+contents in [Section 4.4](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#44-adding-notes), 
+[Section 4.5](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#45-editing-and-deleting-notes),
+[Section 4.6](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#46-showing-notes),
+[Section 4.11](https://ay2021s1-cs2113t-w13-4.github.io/tp/DeveloperGuide#411-parsing-commands).
 
 ### Contributions to Team-Based Tasks
 
